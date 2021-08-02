@@ -36,7 +36,7 @@ export function shareReplay<T>(bufferSize?: number, windowTime?: number, schedul
  * the inner `ReplaySubject` will be unsubscribed. All new subscribers will receive value emissions from a
  * new `ReplaySubject` which in turn will cause a new subscription to the source observable.
  * If `refCount` is false on the other hand, the source will not be unsubscribed meaning that the inner
- * `ReplaySubject` will still be subscribed to the source (and potentially run for ever).
+ * `ReplaySubject` will still be subscribed to the source (and potentially run forever).
  *
  * ## Example
  * ```ts
